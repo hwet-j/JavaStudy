@@ -2,6 +2,14 @@ package chap05;
 
 import java.util.Arrays;
 
+/*
+ * Arrays클래스의 모든 메소드는 static메소드이다.
+ * ==> (객체생성하지 않고) 클래스명.메소드명()
+ * ==> Ex) Arrays.toString() 
+ * 
+ * 
+ * */
+
 public class ArrayEx05 {
 	public static void main(String[] args) {
 		// int형 숫자데이터를 저장하기 위한 배열 arr1 선언
@@ -20,7 +28,7 @@ public class ArrayEx05 {
 			System.out.printf("배열의 요소 값 : %d\n", i);
 		}
 		
-		// Arrays 메소드를 사용하여 배열 출력
+		// Arrays 메소드를 사용하여 배열 출력 (util)
 		System.out.println();
 		System.out.println("Arrays.toSting() 사용하여 출력 (util)");
 		System.out.println("배열 출력 : " + Arrays.toString(arr1));

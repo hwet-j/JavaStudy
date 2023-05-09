@@ -1,0 +1,49 @@
+1. 기본적인 setting -> _config.yml 파일에서 수정 
+	title, 주소, base_url 등.....
+	
+2. _post폴더에 각 포스트 등록 가능.
+	글을 작성하는 새로운 md(markdown)을 작성해줘야할듯함. open source내에 포스터 생성이 없음
+	
+	가장 윗부분에서 포스트의 기본 설정가능 catefories는 구분을 "  " spacebar로 구분하는듯함.(tags도 마찬가지)
+	
+	https://gist.github.com/ihoneymon/652be052a0727ad59601 ==> markdown 문법
+	
+3. _post의 명령어?
+# 코드작성
+	{% highlight java%}
+	코드
+	{% endhighlight %}
+
+
+hightlight 가능한 언어 해당 언어에 작성된 코드 입력하면 된다. ==> Ex) {% hightlight c# %}	
+Actionscript (as, as3, actionscript)
+Applescript (applescript)
+bash (bash, sh)
+C (c, h)
+Clojure (clojure)
+C++ (c++, cpp, hpp)
+C# (c#, csharp, cs)
+CSS (css)
+diff (diff)
+Dylan (dylan)
+Erlang (erlang, erl, er)
+HTML (html, htm)
+Java (java)
+JavaScript (javascript, js, jscript)
+JSP (jsp)
+Make (make, basemake, makefile)
+Objective-C (objective-c)
+OCaml (ocaml)
+Perl (perl, pl)
+PHP (php)
+Python (python, py)
+RHTML (erb, rhtml)
+Ruby (ruby, rb)
+Scala (scala)
+Scheme (scheme)
+Smalltalk (smalltalk)
+Smarty (smarty)
+SQL (sql)
+XML (xml, xsd)
+XSLT (xslt)
+YAML (yaml, yml)
