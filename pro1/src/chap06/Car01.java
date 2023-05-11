@@ -16,11 +16,34 @@ package chap06;
 public class Car01 {
 	String color="red";		// 색상- "red"
 	String brand = "볼보";		// 브랜드-"볼보" "테슬라"
-	double fe; //연비-10.5   
+	double fe = 10.6; //연비-10.5   
 	int rpm;//RPM - 0~100000
 	char useAI = 'Y';// AI탑재유무-'Y' 'N'   -> char 형이기 때문에 대소문자 구분해야함.
 	boolean useNav = true;//네비게이션유무- true false 
 	
 	int currentSpeed = 0;
 	int maxSpeed = 300;
+	
+	// 시동켜기
+	void powerOn() {
+		System.out.println("powerOn() 호출");
+	}
+	// 시동끄기
+	void powerOff() {
+		System.out.println("powerOff() 호출");
+	}
+	
+	// 속도 높이기 
+	void speedUp() {
+		currentSpeed += 10;
+		System.out.println("가속.." + currentSpeed + "km/h");
+	}
+	
+	// 속도 줄이기
+	void speedDown() {
+		currentSpeed -= 10;
+		System.out.println("감속.." + currentSpeed + "km/h");
+	}
+	
+	
 }
