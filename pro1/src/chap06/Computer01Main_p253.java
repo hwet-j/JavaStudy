@@ -7,5 +7,6 @@ public class Computer01Main_p253 {
 		
 		System.out.println(com.sum1(new int[]{1,2,3,5,6,7}));
 		System.out.println(com.sum2(1,2,3,5,6,7));
+		System.out.println("한글");
 	}
 }
