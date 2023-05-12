@@ -35,6 +35,10 @@ public class Student {
 		System.out.printf("학생의 이름은 %s 입니다.\n", name);
 	}
 	
+	void printName(String freind) {
+		System.out.printf("학생 %s의 친구는 %s 입니다.\n", name, freind);
+	}
+	
 	void printAge() {
 		System.out.printf("학생의 나이는 %d세 입니다.\n", age);
 	}

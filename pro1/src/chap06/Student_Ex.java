@@ -11,6 +11,8 @@ public class Student_Ex {
 		std.setName("홍길동");
 		System.out.println(std.getAge());
 		System.out.println(std.getName());
+		std.printName();
+		std.printName("철수");
 
 		
 	}
