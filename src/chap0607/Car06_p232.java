@@ -24,6 +24,18 @@ public class Car06_p232 {
 	// [접근제어자] 클래스명(매개변수리스트){}
 	public Car06_p232(){}
 	
+	public Car06_p232(String company,
+	int price,
+	char grade,		
+	boolean isHybrid ,
+	Date productionDay){
+		this.company = company;
+		this.price = price;
+		this.grade = grade;
+		this.isHybrid = isHybrid;
+		this.productionDay = productionDay;
+	}
+	
 	// 생성자의 오버로딩
 	public Car06_p232(String company) {
 		this.company = company;

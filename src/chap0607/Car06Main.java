@@ -1,5 +1,7 @@
 package chap0607;
 
+import java.util.Date;
+
 public class Car06Main {
 
 	public static void main(String[] args) {
@@ -29,6 +31,23 @@ public class Car06Main {
 		Car06_p232 car4 = new Car06_p232("매우좋은회사", 6000);	
 		System.out.println(car4.getCompany());
 		System.out.println(car4.getPrice());
+		
+		System.out.println();
+		System.out.println("================");
+		
+		// Car06클래스의 임의데이터로 초기화된 객체생성하세요
+		Car06_p232 car5 = new Car06_p232("아주좋은회사",
+		7000,
+		'A', 		
+		true,
+		new Date("2019/05/16/17:22:10"));	
+		System.out.println(car5.getCompany());
+		System.out.println(car5.getPrice());
+		System.out.println(car5.getGrade());
+		System.out.println(car5.isHybrid());
+		System.out.println(car5.getProductionDay());
+		
+		
 	}
 
 }
