@@ -8,7 +8,6 @@ public class 스타Main {
 		zealot.공격받음();
 		templar.공격받음();
 		
-//		프로토스[] protoss = new 프로토스(zealot, templar);
 
 	}
 
