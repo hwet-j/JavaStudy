@@ -12,7 +12,7 @@ public class Twelve {
 
 	public static void main(String[] args) {
 		String my_string = "banana"	; 
-		String is_prefix = "ban";
+		String is_prefix = "nan";
 		String[] strArr = my_string.split("");
 		int answer = 0;
 		
@@ -25,9 +25,10 @@ public class Twelve {
 				answer = 1;
 				break;
 			}
+			System.out.println(temp);
 			temp = "";
 		}
-		
+		System.out.println(answer);
 		
 	}
 

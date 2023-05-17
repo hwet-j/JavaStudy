@@ -1,98 +1,77 @@
 package chap0607;
 
-/* 
-promotion : 상속관계에 있는 클래스간에 프로그램 실행 도중 자동 형변환이 일어나는 것
-문법 > 
- 	클래스 참조변수 = new 클래스();
- 	부모클래스 참조변수 = new 자식클래스();
- */
-class Father extends GrandFather{
-	public String father;
-	
-	void fatherPrint() {
-		System.out.println("Father가 출력됨");
-	}
-	
-	public String getFather() {
-		return father;
-	}
-	
-	public void setFather(String father) {
-		this.father = father;
-	}
-	
-	
-}
+import java.util.Calendar;
+import java.util.Date;
 
-class GrandFather{
-	public String grandFather;
-	
-	public GrandFather() {		
-	}
-	void grandFaPrint() {
-		System.out.println("GrandFather가 출력됨");
-	}
-	
-	public String getGrandFather() {
-		return grandFather;
-	}
-	
-	public void setGrandFather(String grandFather) {
-		this.grandFather = grandFather;
-	}
-	
-	
-}
+/*Promotion(p333) :자동형변환. 
+ * 상속관계에 있는 클래스간  
+ * 프로그램 실행 도중에 자동적으로 타입변환이 일어나는 것.
+ * 문법>  
+ *  클래스      참조변수 = new 클래스();
+ *  부모타입   참조변수 = 자식타입
+ *  부모클래스 참조변수 = new 자식클래스(); */
+class Table extends Object{}
+class GrandFather extends Object{}
+class Father extends GrandFather{}
+class son 	 extends Father{}
 
-public class Promotion_p333 extends Father{
-	public Promotion_p333() {
-	}
-	void childPrint() {
-		System.out.println("자식 출력됨");
-	}
-	
-	public static void main(String[] args) {
-		System.out.println("===== test1 =====");
-		GrandFather test1 = new Father();
-		test1.grandFaPrint();
-		// test1.fatherPrint();   
-		// 참조변수는 Father()를 참조하지만 참조타입이 GrandFather이므로 자동 형변환되어
-		// Father에 있는 메서드 사용 불가
+public class Promotion_p333 {
+
+	public static void main(String[] args) {	
+		GrandFather gf = new GrandFather(); //100번지
+		Father      f  = new Father();	    //200번지
+		son         son= new son();			//300번지
 		
-		System.out.println("\n\n===== test2 =====");
-		Father test2 = new Father();
-		test2.grandFaPrint();
-		test2.fatherPrint(); 		// 참조 타입이 Father이므로 Father의 메서드 사용가능
+		Object      obj= new Table();
+					obj= new GrandFather();
+					obj= new Father();
+					obj= new son();
+					obj= new Date();
+					obj= Calendar.getInstance();
+					obj= new String("홍길동");
+					obj= "홍길동";
+		Table       table=new Table();	
 		
-		System.out.println("\n\n===== test3 =====");
-		GrandFather test3 = new Promotion_p333();
-		test3.grandFaPrint();
-		// test3.fatherPrint();
-		// test3.childPrint();
-		// test1의 결과와 동일하게 참조변수가 GrandFather이므로 Father, Child 메서드 사용불가
+		//p333 클래스의 변환은 상속관계에 있는 클래스 사이에서 발생한다
+		//Table     table1=new GrandFather();//에러발생
+		//Type mismatch: cannot convert from GrandFather to Table
+		//Table     table2=new Father();////에러발생
+		//Type mismatch: cannot convert from Father to Table
+		//Table     table3=new son();	 ////에러발생
+		//Type mismatch: cannot convert from son to Table
 		
-		System.out.println("\n\n===== test4 =====");
-		Father test4 = new Promotion_p333();
-		test4.grandFaPrint();
-		test4.fatherPrint();
-		// test4.childPrint();
+		//자동형변환.자식은 부모 타입으로 자동타입변환이 가능
+		GrandFather gf1 = new GrandFather();//110번지
+		 			gf1 = gf;				//100번지
+					gf1 = new Father();		//210번지
+					gf1 = f;				//200번지 
+					gf1 = new son();		//310번지
+					gf1 = son;				//300번지	
 		
+		Father      f1 = new Father();		//220번지
+					f1 = f;					//200번지
+					f1 = new son();			//320번지
+					f1 = son;				//300번지
 		
-		GrandFather gf = new GrandFather();			// a번지
-		Father f = new Father();					// b번지
-		Promotion_p333 son = new Promotion_p333();	// c번지
-		
-		GrandFather gf1 = new GrandFather();		// d번지
-					gf1 = gf;						// a번지
-					gf1 = new Father();				// e번지
-					gf1 = f;						// b번지
-					gf1 = new Promotion_p333();		// f번지
-					gf1 = son;						// c번지
-		// ==> 동일한 번지를 참조하는 상황에서는 새로운 번지가 아니므로 이전에 동일번지의 객체를 수정했다면, 수정된 상태가 유지된 채로 참조한다.
+		son         son1=new son();			//320번지
+					son1=son;				//300번지
 					
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

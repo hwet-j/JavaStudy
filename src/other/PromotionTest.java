@@ -1,5 +1,4 @@
-package chap0607;
-
+package other;
 
 public class PromotionTest extends Father{
 	public PromotionTest() {
