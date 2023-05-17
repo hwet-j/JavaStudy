@@ -1,5 +1,6 @@
 package chap0607;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Car06Main {
@@ -40,12 +41,26 @@ public class Car06Main {
 		7000,
 		'A', 		
 		true,
-		new Date("2019/05/16/17:22:10"));	
+		new Date("2023/05/11/17:22:10"));	
+		
 		System.out.println(car5.getCompany());
 		System.out.println(car5.getPrice());
 		System.out.println(car5.getGrade());
 		System.out.println(car5.isHybrid());
 		System.out.println(car5.getProductionDay());
+		
+		System.out.println();
+		System.out.println("==================");
+		
+		SimpleDateFormat sim = new SimpleDateFormat("2023/05/11/17:22:10");
+		// 객체를 출력해주는 메서드를 작성해 활용
+		Car06_p232 car6 = new Car06_p232("아주회사",
+				7000,
+				'A', 		
+				true,
+				new Date("2023/05/11/17:22:10"));
+//		car5.printInfo();
+		System.out.println(car5.toString());
 		
 		
 	}

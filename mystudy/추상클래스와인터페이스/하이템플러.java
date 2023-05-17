@@ -1,6 +1,6 @@
 package 추상클래스와인터페이스;
 
-public class 하이템플러 extends 프로토스 implements 지상유닛{
+public class 하이템플러 extends 프로토스 implements 지상유닛, 공격{
 	// 하이템플러만의 특성
 	void 사이오닉스톰() {
 		System.out.println("하이템플러가 스킬 사이오닉 스톰을 사용합니다.");
@@ -47,8 +47,11 @@ public class 하이템플러 extends 프로토스 implements 지상유닛{
 	
 	@Override
 	public void 지상방업() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("하이템플러의 방어력이 1 증가");
+	}
+	@Override
+	public void 공격() {
+		System.out.println("하이템플러가 공격 명령을 받습니다.");
 	}
 	
 

@@ -1,6 +1,6 @@
 package 추상클래스와인터페이스;
 
-public class 저글링 extends 저그 implements 지상유닛중공격특성{
+public class 저글링 extends 저그 implements 지상유닛, 공격, 지상공격{
 
 	@Override
 	void 이동() {
@@ -35,15 +35,19 @@ public class 저글링 extends 저그 implements 지상유닛중공격특성{
 		System.out.println("저글링이 1초에 체력1씩 회복합니다.");
 	}
 
-
 	@Override
 	public void 지상방업() {
-		System.out.println("저글링이 방어력이 1증가합니다.");
+		System.out.println("저글링 방어력 1증가");
 	}
 
 	@Override
-	public void 지상공업() {
-		System.out.println("저글링의 공격력이 1증가합니다.");
+	public void 지상유닛공격() {
+		System.out.println("저글링이 지상유닛을 공격합니다.");
+	}
+
+	@Override
+	public void 공격() {
+		System.out.println("저글링이 공격 명령을 받습니다.");
 	}
 
 

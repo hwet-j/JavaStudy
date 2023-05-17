@@ -1,25 +1,12 @@
 package 추상클래스와인터페이스;
 
-public class 질럿 extends 프로토스 implements 지상유닛중지상공격{
+public class 질럿 extends 프로토스 implements 지상유닛, 공격, 지상공격{
 	void 발업() {
 		System.out.println("질럿의 발업이 완료되었습니다.");
 	}
 	
 	
-	@Override
-	public void 지상공업() {
-		System.out.println("질럿의 공격력이 2 증가합니다.");
-	}
 
-	@Override
-	public void 지상방업() {
-		System.out.println("질럿의 방어력이 1 증가합니다.");
-	}
-
-	@Override
-	public void 지상공격() {
-		System.out.println("질럿이 피해를 가합니다.");
-	}
 
 	@Override
 	void 쉴드회복() {
@@ -54,6 +41,25 @@ public class 질럿 extends 프로토스 implements 지상유닛중지상공격{
 	@Override
 	void 공격받음() {
 		System.out.println("질럿이 피해를 받습니다.");
+	}
+
+
+
+
+	@Override
+	public void 지상유닛공격() {
+		System.out.println("질럿이 지상유닛을 공격합니다.");
+	}
+
+
+	@Override
+	public void 지상방업() {
+		System.out.println("질럿의 방어력 1증가");
+	}
+	
+	@Override
+	public void 공격() {
+		System.out.println("질럿이 공격 명령을 받습니다.");
 	}
 
 }
