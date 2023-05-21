@@ -8,7 +8,7 @@ package programmers;
 이때 변환한 정수값이 k보다 큰 값들을 담은 배열을 return 하는 solution 함수를 완성해 주세요. * */
 import java.util.Arrays;
 
-public class Six {
+public class _06 {
 
 	public static void main(String[] args) {
 		String[] intStrs,strArr; 

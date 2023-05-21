@@ -13,7 +13,7 @@ package programmers;
  * */
 import java.util.Arrays;
 
-public class Five {
+public class _05 {
 
 	public static void main(String[] args) {
 		int answer = 0;

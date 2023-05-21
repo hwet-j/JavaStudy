@@ -1,8 +1,6 @@
 package programmers;
 
-import java.util.Arrays;
-
-public class Four {
+public class _04 {
 
 	public static void main(String[] args) {
 		String my_string = "rermgorpsam";
