@@ -14,7 +14,5 @@ public class _02 {
 			com -= 1;
 		}
 		System.out.println(answer);
-
 	}
-
 }

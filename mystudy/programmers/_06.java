@@ -40,9 +40,5 @@ public class _06 {
 		answer = Arrays.copyOf(answer, cnt);
 		System.out.println(Arrays.toString(answer));
 		
-		
-		
-		
 	}
-
 }

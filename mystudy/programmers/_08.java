@@ -16,8 +16,6 @@ public class _08 {
 		}
 		System.out.println(answer);
 		
-		
-		
 	}
 
 }

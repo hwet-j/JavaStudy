@@ -17,8 +17,6 @@ public class _03 {
 		System.out.println(result.toUpperCase());
 		char ch = 'r';
 		System.out.println(Character.toLowerCase(ch));
-
 	}
-
 }
 

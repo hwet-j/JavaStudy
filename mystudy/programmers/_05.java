@@ -51,8 +51,5 @@ public class _05 {
 			}
 		}
 		System.out.println(answer);
-		
-		
 	}
-
 }

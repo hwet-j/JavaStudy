@@ -14,8 +14,5 @@ public class _01 {
 		answer /= arr.length;
 		
 		System.out.println(answer);
-		
-
 	}
-
 }

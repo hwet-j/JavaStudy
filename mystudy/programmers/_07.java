@@ -19,12 +19,6 @@ public class _07 {
 			}
 		}
 		System.out.println(answer);
-		
-		
-		
-		
-		
-		
 	}
 
 }
