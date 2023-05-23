@@ -1,5 +1,8 @@
 package chap11;
 
+import java.util.ArrayList;
+import java.util.List;
+
 // hashCode() : 객체의 해시코드를 반환하는 메서드
 /*
 Object 클래스의 hashCode() 메서드는 객체의 메모리 번지를 이용해서 해시코드를 만들어 리턴한다.
@@ -45,6 +48,31 @@ public class Object_p474 {
 		System.out.println("str1의 해시코드 확인 " + str1.hashCode());		// 99162322
 		System.out.println("str3의 해시코드 확인 " + str3.hashCode());		// 99162322
 		// --> 해시코드는 동일하다....--> String클래스에서는 hashCode()를 재정의하여 동일주소를 리턴 한다.
+		
+		System.out.println("\n기본형의 비교");
+		// 기본형의 비교
+		Integer intVar1 = new Integer(5);
+		Integer intVar2 = new Integer(5);
+		
+		System.out.println(intVar1 == intVar2);
+		System.out.println("intVar1의 해시코드 확인 " + intVar1.hashCode());		// 99162322
+		System.out.println("intVar2의 해시코드 확인 " + intVar2.hashCode());		// 99162322
+		
+		int arr1[] = {1,2,3,4,5,6};
+		int arr2[] = {1,2,3,4,5,6};
+		
+		int arr3[] = {1,52,6};
+		System.out.println(arr1 == arr2);
+		System.out.println(arr1.hashCode() == arr2.hashCode());
+		System.out.println(arr1.equals(arr2));
+		
+		
+		
+		
+		
+		
+		// 배열의 비교
+		
 		
 		
 	}
