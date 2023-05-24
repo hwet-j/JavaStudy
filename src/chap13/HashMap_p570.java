@@ -72,7 +72,6 @@ public class HashMap_p570 {
 		
 		
 		
-		
 	}
 
 }

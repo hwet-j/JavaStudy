@@ -2,9 +2,11 @@ package chap13;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class CarMain {
@@ -105,7 +107,6 @@ public class CarMain {
 			System.out.println(setItem.toString());	// 오버라이딩된 값 출력
 			System.out.println(((CarDTO)setItem).getBrand());	// CarDTO에만 있는 메서드 사용하려면 강제형변환 필요
 		}
-		
 		
 	}
 
