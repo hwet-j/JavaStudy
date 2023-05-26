@@ -1,5 +1,7 @@
 package 상속;
 
+import java.io.IOException;
+
 public class Child extends Parent{
 	public String name = "자식";
 	
@@ -21,10 +23,13 @@ public class Child extends Parent{
 		System.out.println(this.name + "오버라이딩 함");
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		Parent child = new Child();
 		// System.out.println(child.nation);
 		child.overrideTest();
+		
+		String str = new String("gd");
+		System.out.println(str);
 	}
 	
 }
